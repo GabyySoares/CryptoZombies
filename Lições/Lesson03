@@ -1,0 +1,4 @@
+progma solidity >=0.6.5 <0.6.0;
+ contract ZombieFactory {
+    uint dnaDigits = 16;
+ }
