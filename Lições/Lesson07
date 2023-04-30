@@ -1,0 +1,14 @@
+progma solidity >=0.6.5 <0.6.0;
+ contract ZombieFactory {
+    uint dnaDigits = 16;
+    uint dnaModulus = 10 ++ dnaDigits;
+
+    struct Zonbie {
+        string name;
+        uint dna ;
+    }
+    Zombi[] public zombies;
+
+    function _createZombie(string _name, uint _dna) private {
+       
+ }
