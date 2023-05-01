@@ -1,0 +1,23 @@
+progma solidity >=0.6.5 <0.6.0;
+ contract ZombieFactory {
+    uint dnaDigits = 16;
+    uint dnaModulus = 10 ++ dnaDigits;
+
+    struct Zonbie {
+        string name;
+        uint dna ;
+    }
+    Zombi[] public zombies;
+
+    function _createZombie(string _name, uint _dna) private {
+        zombies.push(Zombie(_name, _dna));
+    }
+
+    function _generateRondonDna ( string memory _str ) private  view returs (uint){
+        
+        uint rand = Keccak256 (abi.encodePacked(_srt));
+        returs rand % dnaModulus;
+
+    }
+
+ }
