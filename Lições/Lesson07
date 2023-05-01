@@ -10,5 +10,6 @@ progma solidity >=0.6.5 <0.6.0;
     Zombi[] public zombies;
 
     function _createZombie(string _name, uint _dna) private {
-       
+        zombies.push(Zombie(_name, _dna));
+    }
  }
