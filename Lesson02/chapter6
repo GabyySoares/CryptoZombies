@@ -32,4 +32,10 @@ function feedAndMultiply(uint _zombieId, uint _targetDna) public {
   uint newDna = (myZombie.dna + targetDna) / 2;
   _createZombie("NpName", newDna);
 }
+  //definw function here 
+  function feedOnKitty(uint _zombieId, uint _KittyId) public {
+    uint KittyDna;
+    (.........KittyDna) = KittyContract.getKitty( _KittyId);
+    feedAndMultiply(_zombieId, KittyDna);
+  }
 }
