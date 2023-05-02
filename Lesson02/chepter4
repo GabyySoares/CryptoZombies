@@ -32,6 +32,8 @@ contract ZombieFactory;
 
     }
        function createRandomZombie (string memory _name) public {
+          // star here
+          
           uint nameDna = generateRondomDna (name);
           _createZombie(name , namedNa);
        }
