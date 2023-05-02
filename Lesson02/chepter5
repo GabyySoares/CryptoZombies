@@ -37,4 +37,9 @@ contract ZombieFactory;
           uint nameDna = generateRondomDna (name);
           _createZombie(name , namedNa);
        }
+    
+    // start here
+    contract ZombieFeeding is ZombieFactory {
+        
+    }
  
