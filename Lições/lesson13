@@ -15,6 +15,9 @@ progma solidity >=0.6.5 <0.6.0;
 
     function _createZombie(string _name, uint _dna) private {
         zombies.push(Zombie(_name, _dna));
+        uint id = zombies.push(Zombie(_name,_dna));
+        // and fire it here
+     emit NewZombie(id,_name , _dna);
     }
 
     function _generateRondonDna ( string memory _str ) private  view returs (uint){
