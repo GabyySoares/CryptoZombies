@@ -1,0 +1,22 @@
+progma solidity >=0.5.0 <0.5.0 <0.6.6;
+
+contract ZombieFactory;
+ 
+  event NewZombie (uint zombieId, string name , uint dna);
+
+  uint danaDigits = 16;
+  uint dnaModulos = 10 ** dnaDigits;
+
+  struct Zombie {
+     string name ;
+     uint dna;
+  }
+
+  Zombie[] public zombies;
+
+  //declare mappings here
+
+  function _createZombie ( string memory _name, uint _dna) private {
+      uint id = zombies.push(Zombie (_name, _dna)) - 1;
+      emit NewZombie(id, _name, _dna);
+  }
