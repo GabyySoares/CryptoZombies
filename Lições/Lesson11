@@ -16,7 +16,7 @@ progma solidity >=0.6.5 <0.6.0;
     function _generateRondonDna ( string memory _str ) private  view returs (uint){
         
         uint rand = Keccak256 (abi.encodePacked(_srt));
-        returs rand % dnaModulus;
+        returs rand % dnaModulus; 
 
     }
 
