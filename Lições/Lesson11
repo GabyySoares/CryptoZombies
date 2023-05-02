@@ -1,6 +1,6 @@
 progma solidity >=0.6.5 <0.6.0;
  contract ZombieFactory {
-  //declare our event here
+  
 
   event NewZombie 
     uint dnaDigits = 16;
