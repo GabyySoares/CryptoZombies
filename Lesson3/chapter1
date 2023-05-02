@@ -22,6 +22,15 @@ contract KittyInterface {
   
 
 contract ZombieFeeding is ZombieFactory {
+    //1. remove this:
+
+    //2. change this to just a declaration:
+    KittyInterface  KittyContract;
+
+   //3. Add setKittyContractAddress method here
+   function setKittyContractAddres (addres _address) external {
+     KittyContract = KittyInterface(_address);
+   }
 
 // star here
 function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species) public {
