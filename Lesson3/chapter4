@@ -10,6 +10,11 @@ contract ZombieFactory;
   struct Zombie {
      string name ;
      uint dna;
+     // add new data here
+
+     uint32 level;
+     uint32 readyTime;
+     
   }
 
   Zombie[] public zombies;
