@@ -56,6 +56,8 @@ function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species
      }
   
   _createZombie("NoName", newDna );
+  ///3. Call '_triggerCooldown'
+  _triggerCooldonw(myZombie);
 }
   //definw function here 
   function feedOnKitty(uint _zombieId, uint _KittyId) public {
