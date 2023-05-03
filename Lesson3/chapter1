@@ -31,6 +31,17 @@ contract ZombieFeeding is ZombieFactory {
    function setKittyContractAddres (addres _address) external {
      KittyContract = KittyInterface(_address);
    }
+ // 1. Define '_triggercolldonw' function here
+  function _triggercolldonw(Zombie storage _zombie) internal{
+     _zombie.readyTime = uint32 (now + cooldonwTime)
+
+  }
+
+  //2. Define '_isReady' function here
+
+  function _isReady(Zombie storage _zombie ) internal view returns (bool){
+    return (_zombie.readyTime <= now;)
+  }
 
 // star here
 function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species) public {
@@ -42,7 +53,9 @@ function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species
    //Add an if statement here
    if (Keccak256(abi.encodePacked(_species))) == Keccak256(abi.encodePacked("Ketty"));
      newDna = newDna - newDna % 100 + 99;
-  _createZombie("NpName", newDna);
+     }
+  
+  _createZombie("NoName", newDna );
 }
   //definw function here 
   function feedOnKitty(uint _zombieId, uint _KittyId) public {
@@ -50,4 +63,3 @@ function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species
     (.........KittyDna) = KittyContract.getKitty( _KittyId);
     feedAndMultiply(_zombieId, KittyDna, Kitty);
   }
-}
