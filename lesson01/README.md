@@ -1,7 +1,7 @@
 
 # Lições cryptozombies 
+Aprendendo a escrever smart contracts em Solidity através da construção do um jogo .
 
-Aprendendo a escrever smart contracts em Solidity através da construção do seu próprio jogo cripto-colecionável.
 
 
  ## Payable modifier
