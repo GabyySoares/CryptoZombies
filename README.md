@@ -2,6 +2,7 @@
 # Lições cryptozombies 
 ![CryptoZombies](https://user-images.githubusercontent.com/13703497/69648502-c8f3db80-10ae-11ea-9d52-ce4d4bbc426a.jpeg)
 
+
 Aprendendo a escrever smart contracts em Solidity através da construção do um jogo .
 
 
@@ -89,6 +90,8 @@ assert vs require
 
 
 ## Referência
+
+![solidity](https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black)
 
  - [jogo cryptozombies](https://cryptozombies.io/en/course/)
  ## License
